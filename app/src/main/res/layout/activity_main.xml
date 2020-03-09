@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="fill_horizontal"
+    android:columnCount="1"
+    android:rowCount="8"
+    android:useDefaultMargins="true"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/gasTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:gravity="center"
+        android:padding="@dimen/textView_padding"
+        android:text="@string/gasPrice" />
+
+    <TextView
+        android:id="@+id/gasPriceTextView"
+        android:layout_width="73dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:gravity="center"
+        android:padding="@dimen/textView_padding" />
+
+    <SeekBar
+        android:id="@+id/gasPriceSeekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/seekbar_height"
+        android:layout_gravity="fill_horizontal"
+        android:max="500"
+        android:progress="0" />
+
+    <TextView
+        android:id="@+id/alcoholTextView"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:gravity="center"
+        android:padding="@dimen/textView_padding"
+        android:text="@string/alcoholPrice" />
+
+    <TextView
+        android:id="@+id/AlcoholPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:gravity="center"
+        android:padding="@dimen/textView_padding" />
+
+    <SeekBar
+        android:id="@+id/alcoholPriceSeekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/seekbar_height"
+        android:layout_gravity="fill_horizontal"
+        android:max="500"
+        android:progress="0" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/resEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:gravity="center"
+            android:hint="@string/resultLabel" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/res_ImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal|fill_vertical"
+        app:srcCompat="@drawable/images" />
+
+</GridLayout>

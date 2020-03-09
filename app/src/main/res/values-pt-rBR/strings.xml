@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fuel Caculator</string>
+    <string name="alcoholPrice">Preço por litro de Etanol</string>
+    <string name="gasPrice">Preço por litro de Gasolina</string>
+    <string name="resultLabel">É melhor usar...</string>
+    <string name="resultTextEthanol">Etanol</string>
+    <string name="resultTextGasoline">Gasolina</string>
+</resources>
